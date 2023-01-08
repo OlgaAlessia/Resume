@@ -1,9 +1,8 @@
-<!--contacts.html-->
 <!doctype html>
 <html lang="en">
 	<head>
 	  <title>Olga Quaranta Resume</title>
-	  <meta charset="UTF-8">
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" id="css/style-css" href="wp-content/themes/style.css" type="text/css" media="all">
 	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
@@ -17,9 +16,9 @@
 			<!-- Menu -->
 			<div id="header-menu">
 				<!-- Hover Name -->
-				<div class="mask-olga center">
-					<span class="anim-name">Olga <strong>Quaranta</strong></span>
-					<span onclick="window.open('OQ_Resume.pdf')">Download <strong>CV</strong></span>
+				<div class="mask-olga-top center">
+					<span class="anim-res">Download <strong>Resume</strong></span>
+					<span onclick="window.open('OQ_Resume.pdf')">Click <strong>Here</strong></span>
 				</div>
 				<div class="hamburger d-lg-none">
 					<span></span>
@@ -44,33 +43,56 @@
 			</div>
 			<!-- div.header-menu -->
 		</header>		
-		<div id="info-container">
+		<div id="info-container" class="container">
 			<div class="row">
-				<div class="col m-4"> <h2 class="center">Get in Touch</h2></div>
+				<div class="col m-4"> <h1 class="center strong">Get in Touch</h1></div>
+				<br>
 			</div>
-			<div class="row mb-5 mx-5">
-				<div class="col-12 col-lg-5 py-4 box">
-					<p><i class="fa-solid fa-phone fa-2x"></i></p>
-					<h5> PHONE </h5>
-					<p>+1 (XXX) XXX-XXXX</p>
+			<div class="row boxes">
+				<div class="box">
+					<div class="front">
+						<div class="content text-center">
+							<i class="fa-solid fa-phone fa-2x"></i>
+						</div>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h5> PHONE </h5>
+							<p>+1 (XXX) XXX-XXXX</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-12 col-lg-2 mb-5 mb-lg-0"></div>
-				<div class="col-12 col-lg-5 py-4 box">
-					<p><i class="fa-solid fa-envelope fa-2x"></i></p>
-					<h5> EMAIL </h5>
-					<a href="mailto:myemail@gmail.com?subject=Mail from your Website">myemail@gmail.com</a>
+				<div class="box">
+					<div class="front">
+						<div class="content text-center">
+							<i class="fa-solid fa-envelope fa-2x"></i>
+						</div>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h5> EMAIL </h5>
+							<a href="mailto:quaranta.olga@gmail.com?subject=Mail from your WebResumeSite">quaranta.olga@gmail.com</a>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="row mb-5 mx-5">
-				<div class="col-12 col-lg-5 py-4 box ">
-					<p><i class="fa-solid fa-location-dot fa-2x"></i></p>
-					<h5> ADDRESS </h5>
-					<p><span id="rollnumber">40</span> ... , Staten Island, NY 10309</p>
-				</div>
+				<div id="boxAddress" class="box">
+					<div class="front">
+						<div class="content text-center">
+							<i class="fa-solid fa-location-dot fa-2x"></i>
+						</div>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h5> ADDRESS </h5>
+							<p>Staten Island, NY 10309</p>
+						</div>
+					</div>
+				</div> 
 			</div>
 		</div>
-		<footer class="footer-contacts">
-			<p> Created with <i class="fa fa-heart" aria-hidden="true"></i> by <strong>Olga Quaranta</strong>.</p>
-		</footer>
+		<div class="footer">
+			Copyright © <strong>Olga Quaranta</strong>. All rights reserved.<br> 
+			Created with <i class="fa fa-heart" aria-hidden="true"></i> by <strong>me</strong>.
+		</div>
 	</body>
 </html>
