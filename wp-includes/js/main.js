@@ -59,16 +59,16 @@ jQuery(document).ready(function($) {
         });
     }
 
-    var pageContacts = $('body').hasClass('page-template-tpl-contacts');
+    //var pageContacts = $('body').hasClass('page-template-tpl-contacts');
+    //var span = document.getElementById('rollnumber');
 
-    if (pageContacts) {
-        animateValue(document.getElementById('rollnumber'));
-    }
-
+    /*if (pageContacts) {
+        document.getElementById('rollnumber').addEventListener('mouseover', animateValue(document.getElementById('rollnumber'), 0, 40, 3000));
+    }*/
 });
 
-
-function animateValue(obj, start = 0, end = null, duration = 3000) {
+/*
+function animateValue(obj, start, end, duration) {
     if (obj) {
 
         // save starting text for later (and as a fallback text if JS not running and/or google)
@@ -102,6 +102,6 @@ function animateValue(obj, start = 0, end = null, duration = 3000) {
         run();
     }
 }
-
+*/
   
 
