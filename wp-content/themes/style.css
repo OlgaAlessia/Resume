@@ -317,6 +317,10 @@ header #header-menu .hamburger span.close:after {
   color: #365F91 !important;
 }
 
+.fa-heart:before {
+  color: red;
+}
+
 /** END Footer **/
 
 
