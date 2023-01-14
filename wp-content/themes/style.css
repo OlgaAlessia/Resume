@@ -800,10 +800,6 @@ header #header-menu .hamburger span.close:after {
     height: auto;
   }
 
-  .page-template-tpl-contacts .footer {
-    position: relative;
-  }
-
 }
 
 @media (min-width: 1200px) {
@@ -854,7 +850,7 @@ header #header-menu .hamburger span.close:after {
   .page-template-tpl-index .footer {
     position: relative !important;
   }
-
+  
   .page-template-tpl-contacts .footer {
     position: absolute !important;
   }
