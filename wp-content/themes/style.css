@@ -11,10 +11,7 @@ html {
 
 body {
   position: relative;
-  /*font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-family: 'Poppins', sans-serif; */
   font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -321,6 +318,10 @@ header #header-menu .hamburger span.close:after {
   color: red;
 }
 
+.page-template-tpl-resume .footer{
+  position: relative;
+}
+
 /** END Footer **/
 
 
@@ -511,6 +512,41 @@ header #header-menu .hamburger span.close:after {
   -o-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
+}
+
+.boxtoTop{
+  position: sticky;
+  bottom: 100px;
+  margin-right: 20px;
+}
+
+#toTop {
+  display: inline-block;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  padding: 10px;
+  text-decoration: none;
+  color: white !important;
+  background: #365F91;
+  box-shadow: -1px 1px 9px 0px rgb(0 0 0 / 63%);
+  border-radius: 50px;
+  z-index: 20;
+  visibility: hidden;
+
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+}
+
+#toTop:hover {
+  color: #365F91 !important;
+  background: white;
+  border: 1px solid #365F91;
+}
+
+#toTop.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /** END Resume **/
@@ -800,6 +836,7 @@ header #header-menu .hamburger span.close:after {
     height: auto;
   }
 
+
 }
 
 @media (min-width: 1200px) {
@@ -850,7 +887,7 @@ header #header-menu .hamburger span.close:after {
   .page-template-tpl-index .footer {
     position: relative !important;
   }
-  
+
   .page-template-tpl-contacts .footer {
     position: absolute !important;
   }
