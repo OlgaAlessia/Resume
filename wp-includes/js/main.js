@@ -10,6 +10,20 @@ jQuery(document).ready(function($) {
         // Quando chiudo l'hamburger chiudo anche il sottomenu se aperto
         //var is_close = $('.hamburger span').hasClass('close');
     });
+
+    $(window).scroll(function() {
+
+        if ($(window).scrollTop() > 300) {
+            $('#toTop').addClass('show');
+        } else {
+            $('#toTop').removeClass('show');
+        }
+    });
+
+    $('#toTop').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
   
     // Milestone: animation left and right //
     var pageResume = $('body').hasClass('page-template-tpl-resume');
