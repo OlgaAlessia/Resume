@@ -132,6 +132,7 @@ header {
 header #header-menu {
   position: relative;
   z-index: 10;
+  display: flex;
 }
 
 header #header-menu .hamburger {
@@ -374,6 +375,10 @@ header #header-menu .hamburger span.close:after {
   height: 80vh;
 }
 
+.page-template-tpl-index .container{
+  margin-top: 3rem;
+}
+
 .page-template-tpl-index .content {
   min-height: calc(100vh - 200px);
 }
@@ -445,6 +450,11 @@ header #header-menu .hamburger span.close:after {
   font-size: 1.25rem;
 }
 
+.flexible_milestones a{
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+
 .h5 .span {
   font-size: 1rem !important;
 }
@@ -514,11 +524,13 @@ header #header-menu .hamburger span.close:after {
   transform: translate3d(0px, 0px, 0px);
 }
 
+/*
 .boxtoTop{
   position: sticky;
   bottom: 100px;
   margin-right: 20px;
 }
+*/
 
 #toTop {
   display: inline-block;
@@ -670,6 +682,10 @@ header #header-menu .hamburger span.close:after {
   html,
   body {
     font-size: 17px;
+  }
+
+  .page-template-tpl-index .footer {
+    position: relative;
   }
 
 }
@@ -836,6 +852,9 @@ header #header-menu .hamburger span.close:after {
     height: auto;
   }
 
+  .page-template-tpl-index .footer {
+    position: absolute;
+  }
 
 }
 
