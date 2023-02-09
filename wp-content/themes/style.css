@@ -781,17 +781,24 @@ header #header-menu .hamburger span.close:after {
 }
 
 
-
-
 @media (min-width: 992px) {
 
   header {
     padding: 10px 0;
   }
 
+  header #header-menu {
+    display: block;  
+  }
+
+  .page-template-tpl-index header #header-menu, .page-template-tpl-resume header #header-menu {
+    margin-top: 3rem;
+  }
+
   #menu {
     background-color: transparent;
     z-index: 10;
+ 
   }
 
   #menu nav ul {
@@ -850,6 +857,10 @@ header #header-menu .hamburger span.close:after {
   .imgCover {
     width: 90%;
     height: auto;
+  }
+
+  .page-template-tpl-index .container {
+      margin-top: 0px;
   }
 
   .page-template-tpl-index .footer {
