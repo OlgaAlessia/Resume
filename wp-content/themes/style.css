@@ -914,10 +914,6 @@ header #header-menu .hamburger span.close:after {
     margin-bottom: 1rem;
   }
 
-  .page-template-tpl-index .footer {
-    position: relative !important;
-  }
-
   .page-template-tpl-contacts .footer {
     position: absolute !important;
   }
